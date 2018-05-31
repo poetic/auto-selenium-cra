@@ -1,0 +1,1 @@
+Example repo for [auto-selenium](https://github.com/poetic/auto-selenium)
