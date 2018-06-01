@@ -18,5 +18,10 @@ auto-selenium:
 #   - yarn install
    - yarn run d:test:selenium pull
    - yarn run d:build
+   - yarn run d:test:up
+   - ls
+   - ls ./__tests__
+   - yarn run d:test:compile
+   - ls ./__tests__
   script:
    - yarn run d:test
