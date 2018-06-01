@@ -16,5 +16,7 @@ auto-selenium:
     - node_modules/
   before_script:
 #   - yarn install
+   - yarn run d:test:selenium pull
+   - yarn run d:build
   script:
    - yarn run d:test
