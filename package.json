@@ -11,6 +11,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "dcompose": "docker-compose -f ./docker-compose.yml",
+    "d:test:selenium": "yarn run dcompose -f ./docker-compose.test.yml",
+    "d:up": "yarn run dcompose up",
+    "d:build": "yarn run dcompose build",
+    "d:test:up": "yarn run d:test:selenium up -d",
+    "d:test": "yarn run d:test:up && yarn run dcompose -f ./docker-compose.test.yml up auto-selenium",
     "eject": "react-scripts eject"
   }
 }
