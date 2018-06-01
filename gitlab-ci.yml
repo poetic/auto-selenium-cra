@@ -19,4 +19,3 @@ auto-selenium:
    - yarn run d
   script:
    - yarn run d:test
-
