@@ -1,0 +1,22 @@
+image: ncrmro/ci-compose
+
+services:
+  - docker:dind
+
+variables:
+  DOCKER_DRIVER: overlay2
+
+stages:
+  - auto-selenium
+
+auto-selenium:
+  stage: auto-selenium
+  cache:
+    paths:
+    - node_modules/
+  before_script:
+   - yarn install
+   - yarn run d
+  script:
+   - yarn run d:test
+
