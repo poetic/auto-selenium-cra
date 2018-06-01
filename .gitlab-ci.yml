@@ -15,7 +15,6 @@ auto-selenium:
     paths:
     - node_modules/
   before_script:
-   - yarn install
-   - yarn run d
+#   - yarn install
   script:
    - yarn run d:test
